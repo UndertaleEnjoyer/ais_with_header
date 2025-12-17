@@ -1,29 +1,16 @@
 import Navigation from "./Navigation";
 import Footer from "./Footer";
-import ChatWidget from "./ChatWidget";
 
 interface LayoutProps {
   children: React.ReactNode;
-  fullWidth?: boolean; // добавили
 }
 
-const Layout = ({ children, fullWidth = false }: LayoutProps) => {
+const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen bg-background flex bg-white flex-col">
       <Navigation />
-
-      <main
-        className={
-          fullWidth
-            ? "flex-1 w-full px-4 py-8 pb-0"  // полный экран, НЕ ограничиваем ширину
-            : "flex-1 container mx-auto px-4 py-8 pb-0"  // как раньше
-        }
-      >
-        {children}
-      </main>
-
+      <main className="flex-1 container mx-auto px-4 py-8">{children}</main>
       <Footer />
-      <ChatWidget />
     </div>
   );
 };
