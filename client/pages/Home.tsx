@@ -55,6 +55,7 @@ const Home = () => {
   return (
     <Layout>
       <div className="font-medium bg-white w-full">
+        {/* Hero Section */}
         <section className="w-full pb-24">
           <div className={heroContainer}>
             <div className="text-center">
@@ -131,6 +132,7 @@ const Home = () => {
           </div>
         </section>
 
+        {/* For Whom Section */}
         <section className="w-full py-20 lg:py-24">
           <div className={container}>
             <h2 className="text-center font-extrabold text-[#3B3B3B] text-[40px] leading-[48px] sm:text-[54px] sm:leading-[62px] lg:text-[60px] lg:leading-[70px]">
@@ -139,6 +141,7 @@ const Home = () => {
           </div>
         </section>
 
+        {/* Students Section */}
         <section className="w-full pb-20">
           <div className={container}>
             <div className="rounded-[40px] border-2 border-orange-500 overflow-hidden grid grid-cols-1 lg:grid-cols-[520px_1fr] lg:min-h-[650px]">
@@ -219,6 +222,7 @@ const Home = () => {
           </div>
         </section>
 
+        {/* Mentor Section */}
         <section className="w-full pb-24">
           <div className={container}>
             <div className="relative overflow-hidden rounded-[48px] bg-blue-700 text-white px-10 py-10 sm:p-12 lg:px-14 lg:py-14 lg:min-h-[650px]">
@@ -298,6 +302,7 @@ const Home = () => {
           </div>
         </section>
 
+        {/* Business Section */}
         <section className="w-full pb-24">
           <div className={container}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-5">
@@ -426,6 +431,7 @@ const Home = () => {
           </div>
         </section>
 
+        {/* About Platform Section */}
         <section className="w-full pb-20">
           <div className={container}>
             <h2 className="text-center font-extrabold text-[#3B3B3B] mb-10 text-[60px]">
@@ -494,17 +500,7 @@ const Home = () => {
               <img
                 src="/images/woman_3.svg"
                 alt=""
-                className="
-      absolute
-      left-[-10px]
-      top-[112px]
-      w-[1320px]
-      h-[620px]
-      object-contain
-      scale-x-[-1]
-      z-[40]
-      pointer-events-none
-    "
+                className="absolute left-[-10px] top-[112px] w-[1320px] h-[620px] object-contain scale-x-[-1] z-[40] pointer-events-none"
                 draggable={false}
               />
             </div>
